@@ -1,0 +1,55 @@
+html, body {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin-top: 102px;
+  margin-bottom: 60px;
+}
+
+nav {
+  height: 60px;
+  background-color: white;
+}
+
+.environment {
+  margin: 36px 0 60px 0;
+}
+
+.environment-info {
+  margin-bottom: 25px;
+}
+
+.environment-info span {
+  display: block;
+  margin-bottom: 15px;
+}
+
+thead {
+  background-color: #0A2A3F;
+  color: white;
+}
+
+thead th {
+  font-weight: 600;
+}
+
+tbody {
+  font-weight: 300;
+}
+
+tbody tr {
+  border-top: 1px solid #0A2A3F;
+  border-bottom: 1px solid #0A2A3F;
+}
+
+tbody tr:last-child td {
+  color: #730249;
+  border-bottom: 1px solid #730249 !important;
+  border-top: 1px solid #730249 !important;
+}
+
+.table td, .table th {
+  border-top: none;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,77 @@
+//Variables
+//Height
+$nav-height: 60px;
+
+$margin-xl: 60px;
+$margin-l: 36px;
+$margin-m: 25px;
+$margin-s: 15px;
+
+//Color palette
+$primary-color: #0A2A3F;
+$secondary-color: #730249;
+$grey: #0A2A3F;
+
+//Fonts
+$font: 'Lato', Arial, Helvetica, sans-serif;
+
+html, body {
+    font-family: $font;
+}
+
+body {
+    margin-top: $nav-height*1.7;
+    margin-bottom: $margin-xl;
+}
+
+nav {
+    height: $nav-height;
+    background-color: white;
+}
+
+.environment {
+    margin: $margin-l 0 $margin-xl 0;
+}
+
+.environment-info{
+    margin-bottom: $margin-m;
+
+    span {
+        display:block;
+        margin-bottom: $margin-s;
+    }
+
+}
+
+thead{
+    background-color: $primary-color;
+    color: white;
+    th{
+        font-weight: 600;
+    }
+}
+
+
+tbody{
+    font-weight: 300;
+
+    tr{
+        border-top: 1px solid $grey;
+        border-bottom: 1px solid $grey;
+    }
+
+
+
+    tr:last-child{
+        td{
+            color: $secondary-color;
+            border-bottom: 1px solid $secondary-color!important;
+            border-top: 1px solid $secondary-color!important;
+        }
+
+    }
+}
+
+.table td, .table th {
+    border-top: none;
+}
