@@ -19,6 +19,11 @@ html, body {
     font-family: $font;
 }
 
+a {
+    color: $primary-color;
+    text-decoration: underline;
+}
+
 body {
     margin-top: $nav-height*1.7;
     margin-bottom: $margin-xl;
