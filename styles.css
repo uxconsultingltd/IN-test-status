@@ -44,9 +44,9 @@ tbody tr {
 }
 
 tbody tr:last-child td {
-  color: #730249;
-  border-bottom: 1px solid #730249 !important;
-  border-top: 1px solid #730249 !important;
+  color: #AF006E;
+  border-bottom: 1px solid #AF006E !important;
+  border-top: 1px solid #AF006E !important;
 }
 
 .table td, .table th {
