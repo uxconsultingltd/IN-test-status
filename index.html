@@ -27,136 +27,151 @@
             <h1>IN Test Status By Category </h1>
         </header>
 
-        <section class="environment">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="qa-tab" data-toggle="tab" href="#qa" role="tab" aria-controls="qa" aria-selected="true">QA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="production-tab" data-toggle="tab" href="#production" role="tab" aria-controls="production" aria-selected="false">PROD</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
 
-            <div class="environment-info">
-                <span><b>Environment: </b>PROD</span>
-                <span><b>Teamcity Build Url: </b>
-                    <a target="_blank" href="http://se-teamcity.ukwest.cloudapp.azure.com/viewType.html?buildTypeId=SeTesting_InternationalNetwork_Prod_UiTests">Here</a>
-                </span>
-                <span><b>Build executed on: </b>11/3/2020 2:05:11 AM</span>
-            </div>
+            <section class="tab-pane fade" id="qa" role="tabpanel" aria-labelledby="qa-tab">
 
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Test Category</th>
-                        <th>Passed</th>
-                        <th>Failed</th>
-                        <th>Pass %</th>
-                        <th>Fail %</th>
-                    </tr>
-                </thead>
+                <div class="environment-info">
+                    <span><b>Environment:</b> QA</span>
+                    <span><b>Teamcity Build Url:</b> 
+                        <a target="_blank" href="http://se-teamcity.ukwest.cloudapp.azure.com/viewType.html?buildTypeId=SeTesting_InternationalNetwork_Qa_UiTests">Here</a>
+                    </span>
+                    <span><b>Build executed on:</b> 11/3/2020 8:20:50 AM</span>
+                </div>
+    
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Test Category</th>
+                            <th>Passed</th>
+                            <th>Failed</th>
+                            <th>Pass %</th>
+                            <th>Fail %</th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <td>UNKNOWN</td>
+                            <td>11</td>
+                            <td>1</td>
+                            <td>91</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>GS_Creation</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>IN_SEARCH</td>
+                            <td>46</td>
+                            <td>0</td>
+                            <td>100</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>IN_LOGIN_MGMT</td>
+                            <td>5</td>
+                            <td>0</td>
+                            <td>100</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>IN_HOMEPAGE</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>100</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>IN_CHAT</td>
+                            <td>4</td>
+                            <td>7</td>
+                            <td>36</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td><b>TOTAL</b></td>
+                            <td><b>70</b></td>
+                            <td><b>9</b></td>
+                            <td><b>88</b></td>
+                            <td><b>12</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
-                <tbody>
-                    <tr>
-                        <td>IN_SEARCH</td>
-                        <td>14</td>
-                        <td>2</td>
-                        <td>87</td>
-                        <td>13</td>
-                    </tr>
-                    <tr>
-                        <td>UNKNOWN</td>
-                        <td>6</td>
-                        <td>0</td>
-                        <td>100</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>IN_LOGIN_MGMT</td>
-                        <td>5</td>
-                        <td>0</td>
-                        <td>100</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td><b>TOTAL</b></td>
-                        <td><b>25</b></td>
-                        <td><b>2</b></td>
-                        <td><b>92</b></td>
-                        <td><b>8</b></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+            <section class="tab-pane fade show active" id="production" role="tabpanel" aria-labelledby="production-tab">
 
-        <section class="environment">
+                <div class="environment-info">
+                    <span><b>Environment: </b>PROD</span>
+                    <span><b>Teamcity Build Url: </b>
+                        <a target="_blank" href="http://se-teamcity.ukwest.cloudapp.azure.com/viewType.html?buildTypeId=SeTesting_InternationalNetwork_Prod_UiTests">Here</a>
+                    </span>
+                    <span><b>Build executed on: </b>11/3/2020 2:05:11 AM</span>
+                </div>
+    
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Test Category</th>
+                            <th>Passed</th>
+                            <th>Failed</th>
+                            <th>Pass %</th>
+                            <th>Fail %</th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <td>IN_SEARCH</td>
+                            <td>14</td>
+                            <td>2</td>
+                            <td>87</td>
+                            <td>13</td>
+                        </tr>
+                        <tr>
+                            <td>UNKNOWN</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>100</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>IN_LOGIN_MGMT</td>
+                            <td>5</td>
+                            <td>0</td>
+                            <td>100</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td><b>TOTAL</b></td>
+                            <td><b>25</b></td>
+                            <td><b>2</b></td>
+                            <td><b>92</b></td>
+                            <td><b>8</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
-            <div class="environment-info">
-                <span><b>Environment:</b> QA</span>
-                <span><b>Teamcity Build Url:</b> 
-                    <a target="_blank" href="http://se-teamcity.ukwest.cloudapp.azure.com/viewType.html?buildTypeId=SeTesting_InternationalNetwork_Qa_UiTests">Here</a>
-                </span>
-                <span><b>Build executed on:</b> 11/3/2020 8:20:50 AM</span>
-            </div>
-
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Test Category</th>
-                        <th>Passed</th>
-                        <th>Failed</th>
-                        <th>Pass %</th>
-                        <th>Fail %</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>UNKNOWN</td>
-                        <td>11</td>
-                        <td>1</td>
-                        <td>91</td>
-                        <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>GS_Creation</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>IN_SEARCH</td>
-                        <td>46</td>
-                        <td>0</td>
-                        <td>100</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>IN_LOGIN_MGMT</td>
-                        <td>5</td>
-                        <td>0</td>
-                        <td>100</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>IN_HOMEPAGE</td>
-                        <td>4</td>
-                        <td>0</td>
-                        <td>100</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>IN_CHAT</td>
-                        <td>4</td>
-                        <td>7</td>
-                        <td>36</td>
-                        <td>64</td>
-                    </tr>
-                    <tr>
-                        <td><b>TOTAL</b></td>
-                        <td><b>70</b></td>
-                        <td><b>9</b></td>
-                        <td><b>88</b></td>
-                        <td><b>12</b></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
+          </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -19,11 +19,6 @@ html, body {
     font-family: $font;
 }
 
-a {
-    color: $primary-color;
-    text-decoration: underline;
-}
-
 body {
     margin-top: $nav-height*1.7;
     margin-bottom: $margin-xl;
@@ -34,7 +29,29 @@ nav {
     background-color: white;
 }
 
-.environment {
+a {
+    color: $primary-color;
+    text-decoration: underline;
+
+    &:hover{
+       color: lighten($primary-color, 20%); 
+    }
+}
+
+header{
+    margin-bottom: $margin-xl;
+}
+
+.nav-tabs .nav-item {
+    min-width: 120px;
+    text-align: center;
+}
+
+.nav-link{
+    text-decoration: none;
+}
+
+.tab-content {
     margin: $margin-l 0 $margin-xl 0;
 }
 
@@ -55,7 +72,6 @@ thead{
         font-weight: 600;
     }
 }
-
 
 tbody{
     font-weight: 300;

@@ -2,11 +2,6 @@ html, body {
   font-family: "Lato", Arial, Helvetica, sans-serif;
 }
 
-a {
-  color: #0A2A3F;
-  text-decoration: underline;
-}
-
 body {
   margin-top: 102px;
   margin-bottom: 60px;
@@ -17,7 +12,29 @@ nav {
   background-color: white;
 }
 
-.environment {
+a {
+  color: #0A2A3F;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #186597;
+}
+
+header {
+  margin-bottom: 60px;
+}
+
+.nav-tabs .nav-item {
+  min-width: 120px;
+  text-align: center;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.tab-content {
   margin: 36px 0 60px 0;
 }
 
